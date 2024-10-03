@@ -36,7 +36,7 @@
         <li>Mis compras <i class="fa-solid fa-basket-shopping"></i></li>
       </ul>
     </nav>
-    <div class="burger-nav">
+    <div class="burger">
       <i class="fa-solid fa-bars"></i>
     </div>
   </header>
@@ -52,6 +52,7 @@
       <label for="email">E-mail</label>
       <input type="email" name="email" id="email" placeholder="E-mail">
 
+      <h4>Fecha de nacimiento</h4>
       <div class="form-fecha">
       <label  for="fecha">Fecha de nacimiento</label>
       <input class="input-form-fecha" type="date" name="fecha" id="fecha" placeholder="mm/dd/yyyy">
@@ -65,9 +66,9 @@
       </h4>
       <div class="perfil">
         <input type="radio" name="perfil" id="comprar" value="comprar">
-        <label for="comprar">Comprador</label>
+        <label class="label-perfil" for="comprar">Comprador</label>
         <input type="radio" name="perfil" id="vender" value="vender">
-        <label for="vender">Vendedor</label>
+        <label class="label-perfil" for="vender">Vendedor</label>
     </div>
 
     <h4>Intereses</h4>
@@ -91,6 +92,7 @@
       <input type="checkbox" name="interes" id="vida_sana" value="Vida sana">
       <label for="vida_sana">Vida sana</label><br>
     </div>
+    <h4>Foto de usuario</h4>
     <div class="avatar">
       <label for="avatar">Foto de usuario</label>
       <input type="file" name="avatar" id="avatar" accept="image/png, image/jpeg">

@@ -6,31 +6,25 @@
 main {
   background-color: #ebebeb;
   text-align: center;
+  justify-content: center;
   margin: 0;
   font-family: roboto, sans-serif;
-  padding-bottom: 20px;
-  color: #ebebeb;
+  color: #666;
 }
-
+form label{
+  display: none;
+}
 
 form input {
   border-radius: 5px;
   padding: 5px;
   border: none;
   text-align: left;
-  width: 90vw;
+  width: 80%;
   height: 24px;
-  margin: 10px;
+  margin:15px auto;
 }
 
-.form-fecha {
-
-  color: black;
-  font-size: 16px;
-  margin: 10px;
-  font-weight: bold;
-  text-align: left;
-}
 .input-form-fecha {
   padding: 5px;
   color: black;
@@ -47,11 +41,17 @@ h4 {
   font-size: 16px;
 }
 
+.label-perfil {
+  display: flex;
+  flex-direction: row;
+  color: black;
+}
+
 div.perfil {
   color: black;
   display: flex;
   flex-direction: row;
-  width: 80vw;
+  width: 70vw;
 }
 
 div.perfil,
@@ -60,12 +60,20 @@ label {
 
 }
 
-.intereses {
+div.intereses {
   display: flex;
   flex-direction: row;
   vertical-align: middle;
   justify-content: flex-start;
   color: black;
+width: 120px;
+}
+.intereses label{
+  display: flex;
+  flex-direction: row;
+width: 12px;
+padding: 15px;
+
 }
 
 
@@ -74,8 +82,6 @@ label {
 #hogar,
 #jugueteria,
 #vida_sana{ 
-  display: flex;
-  flex-direction: row;
   width: 100px;
 }
 
@@ -99,4 +105,49 @@ label {
   text-align: center;
   background-color: #1259c3;
   color: white;
+}
+
+@media  (max-width:767px){
+  header{
+    margin: 0;
+  }
+    header ul {
+      display: none;
+    }
+    
+      main {
+    
+        width: 90vw;
+        margin: 0 auto;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+      }
+  }
+
+@media (min-width: 768px) and (max-width:1023px) {
+
+  main {
+
+    width: 90vw;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+
+
+  h4 {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    width: 90vw;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+
+  h4 {
+    display: block;
+  }
 }

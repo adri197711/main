@@ -1,19 +1,21 @@
 * {
   margin: 0;
   list-style: none;
+  justify-content: center;
 }
 
 header {
+  width: 100vw;
   font-family: roboto, sans-serif;
   font-size: 12px;
   background-color: #EAC926;
-  padding: 20px;
+padding: 15px;
 }
 
 header img {
   text-align: left;
   width: 40vw;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 div input {
@@ -23,22 +25,24 @@ div input {
 }
 
 .header-titulo {
-  align-content: center;
-  margin: 20px 0;
+  display: flex;
   text-align: center;
+  margin: 20px 0;
   font-weight: normal;
   font-size: 12px;
 }
 
-nav ul {
+nav ul li{
+  display: none;
   padding: 0;
   text-align: left;
 }
 
-.burger-nav {
-  text-align: center;
-  margin-top: 30px;
+.burger {
+ width:100vw; 
+ text-align: center;
 }
+
 
 .fa-bars {
   border-radius: 5px;
@@ -46,4 +50,37 @@ nav ul {
   background-color: #1259c3;
   font-size: 20px;
   color: #ebebeb;
+}
+header img.banner{
+
+  width: 100vw;
+}
+@media  (max-width:767px){
+header{
+  margin: 0;
+}
+  header ul {
+    display: none;
+  }
+  .burger{
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 767px) and (max-width:1023px){
+ nav ul li{
+  padding: 0;
+  text-align: left;
+  
+  }
+  .burger{
+    display: none;
+  }
+}
+
+@media (min-width: 1023px){
+  .burger{
+    display: none;
+  }
 }
