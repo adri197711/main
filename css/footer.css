@@ -1,0 +1,23 @@
+
+footer section{
+text-align: center;
+}
+
+footer article{
+  padding: 25px;
+  margin: auto;
+  width: 70vw;
+}
+.footer-icon{
+  color: #1259c3;
+  font-size: 2em;
+  padding: 10px;
+}
+
+footer span{
+  padding: 20px;
+  font-size:12px;
+  text-align: left;
+}
+
+

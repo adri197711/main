@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  list-style: none;
+}
+
+header {
+  font-family: roboto, sans-serif;
+  font-size: 12px;
+  background-color: #EAC926;
+  padding: 20px;
+}
+
+header img {
+  text-align: left;
+  width: 40vw;
+  margin: 10px;
+}
+
+div input {
+  color: #ebebeb;
+  font-size: 12px;
+  width: 50vw;
+}
+
+.header-titulo {
+  align-content: center;
+  margin: 20px 0;
+  text-align: center;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+nav ul {
+  padding: 0;
+  text-align: left;
+}
+
+.burger-nav {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.fa-bars {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #1259c3;
+  font-size: 20px;
+  color: #ebebeb;
+}

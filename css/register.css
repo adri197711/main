@@ -1,0 +1,102 @@
+@import url(header.css);
+@import url(footer.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+main {
+  background-color: #ebebeb;
+  text-align: center;
+  margin: 0;
+  font-family: roboto, sans-serif;
+  padding-bottom: 20px;
+  color: #ebebeb;
+}
+
+
+form input {
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  text-align: left;
+  width: 90vw;
+  height: 24px;
+  margin: 10px;
+}
+
+.form-fecha {
+
+  color: black;
+  font-size: 16px;
+  margin: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+.input-form-fecha {
+  padding: 5px;
+  color: black;
+  font-size: 12px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+h4 {
+  color: black;
+  margin: 10px;
+  font-weight: bold;
+  text-align: left;
+  font-size: 16px;
+}
+
+div.perfil {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+}
+
+div.perfil,
+label {
+  padding-top:12px;
+
+}
+
+.intereses {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  justify-content: flex-start;
+  color: black;
+}
+
+
+#electro,
+#moda,
+#hogar,
+#jugueteria,
+#vida_sana{ 
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+}
+
+.avatar {
+  color: black;
+  padding-top: 10px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.button-send {
+  margin-top: 10px;
+  background-color: #1259c3;
+  color: white;
+  text-align: center;
+}
+
+.enviar{
+  text-align: center;
+  background-color: #1259c3;
+  color: white;
+}
