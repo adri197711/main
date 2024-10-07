@@ -38,8 +38,10 @@ main article{
 }
 
 img{
-  width: 280px;
-}
+    display: flex;
+  width: 100%;
+  justify-content: stretch;
+  }
 
 .truck-container{
   width: 30px;
