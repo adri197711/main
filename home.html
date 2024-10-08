@@ -6,37 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/84ffb2d056.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/styles.css" class="css">
-  <title>Diseño adaptativo</title>
+  <title>Posicionamiento avanzado con Flexbox</title>
 </head>
 
 <body>
   <header>
-    <div>
-      <a href="../home.html"><img src="../img/logo-mercado-liebre.svg" alt="Logo"></a>
-    </div>
+    <div class="header-tablet">
+      <div class="header-flex">
+        <div class="header-logo">
+          <a href="../home.html"><img src="../img/logo-mercado-liebre.svg" alt="Logo"></a>
+        </div>
 
-    <div>
-      <input type="text" placeholder="Buscar productos, marcas">
-      <i class="fa-solid fa-magnifying-glass"></i>
-    </div>
-    <h1 class="header-titulo"><i class="fa-solid fa-hand-holding-dollar"></i>
-      Comprá en cuotas y sin tarjeta de crédito</h1>
 
-    <ul>
-      <li>Ofertas</li>
-      <li>Tiendas Oficiales</li>
-      <li>Vender</li>
-      <li>Ayuda</li>
-    </ul><br>
-    <ul>
-      <li><a href="./formularios/register.html">Crea tu cuenta </a><i class="fa-regular fa-id-card"></i></li>
-      <li><a href="./formularios/login.html">Ingresá </a><i class="fa-solid fa-right-to-bracket"></i></li>
-      <li>Mis compras <i class="fa-solid fa-basket-shopping"></i></li>
-    </ul>
+        <div class="header-input">
+          <input type="text" placeholder="Buscar productos, marcas">
+          <div class="header-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <h1 class="header-titulo"><i class="fa-solid fa-hand-holding-dollar"></i>
+        Comprá en cuotas y sin tarjeta de crédito</h1>
+    </div>
+    <nav>
+      <div class="ul-flex-container">
+        <ul class="ul-flex-productos">
+          <li>Ofertas</li>
+          <li>Tiendas Oficiales</li>
+          <li>Vender</li>
+          <li>Ayuda</li>
+        </ul>
+        <ul class="ul-flex-usuarios">
+          <li><a href="./formularios/register.html">Crea tu cuenta </a><i class="fa-regular fa-id-card"></i></li>
+          <li><a href="./formularios/login.html">Ingresá </a><i class="fa-solid fa-right-to-bracket"></i></li>
+          <li>Mis compras <i class="fa-solid fa-basket-shopping"></i></li>
+        </ul>
+        <div class="burger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
     </nav>
-    <div class="burger">
-      <i class="fa-solid fa-bars"></i>
-    </div>
   </header>
 
   <div class="banner">
@@ -46,16 +56,18 @@
     <section>
       <article>
         <div class="titulo">
-        <h2>Basado en tu última visita</h2>
-       </div>
+          <h2>Basado en tu última visita</h2>
+        </div>
         <img src="./img/img-cafetera-moulinex.jpg" alt="cafetera">
 
         <div class="descripcion-producto">
           <div class="truck-container">
             <i class="fa-solid fa-truck"></i>
           </div>
-          <p class="precio-producto">$6.770</p>
-          <p class="descuento-producto">40% OFF</p>
+          <div class="flex-p">
+            <p class="precio-producto">$6.770</p>
+            <p class="descuento-producto">40% OFF</p>
+          </div>
           <h4>Cafetera Moulinex</h4>
         </div>
       </article>
@@ -65,8 +77,10 @@
           <div class="truck-container">
             <i class="fa-solid fa-truck"></i>
           </div>
-          <p class="precio-producto">$230.000</p>
-          <p class="descuento-producto">20% OFF</p>
+          <div class="flex-p">
+            <p class="precio-producto">$230.000</p>
+            <p class="descuento-producto">20% OFF</p>
+          </div>
           <h4>MacBook Pro 2019</h4>
         </div>
       </article>
@@ -76,8 +90,10 @@
           <div class="truck-container">
             <i class="fa-solid fa-truck"></i>
           </div>
-          <p class="precio-producto">$70.500</p>
-          <p class="descuento-producto">10% OFF</p>
+          <div class="flex-p">
+            <p class="precio-producto">$70.500</p>
+            <p class="descuento-producto">10% OFF</p>
+          </div>
           <h4>Samsung Galaxy S10</h4>
         </div>
       </article>
@@ -87,8 +103,10 @@
           <div class="truck-container">
             <i class="fa-solid fa-truck"></i>
           </div>
-          <p class="precio-producto">$23.200</p>
-          <p class="descuento-producto">5% OFF</p>
+          <div class="flex-p">
+            <p class="precio-producto">$23.200</p>
+            <p class="descuento-producto">5% OFF</p>
+          </div>
           <h4>SmartTv Samsung 43"</h4>
         </div>
       </article>
@@ -101,8 +119,10 @@
           <div class="truck-container">
             <i class="fa-solid fa-truck"></i>
           </div>
-          <p class="precio-producto">$6.770</p>
-          <p class="descuento-producto">40% OFF</p>
+          <div class="flex-p">
+            <p class="precio-producto">$6.770</p>
+            <p class="descuento-producto">40% OFF</p>
+          </div>
           <h4>Cafetera Moulinex</h4>
         </div>
       </article>
@@ -112,8 +132,10 @@
           <div class="truck-container">
             <i class="fa-solid fa-truck"></i>
           </div>
-          <p class="precio-producto">$230.000</p>
-          <p class="descuento-producto">20% OFF</p>
+          <div class="flex-p">
+            <p class="precio-producto">$230.000</p>
+            <p class="descuento-producto">20% OFF</p>
+          </div>
           <h4>MacBook Pro 2019</h4>
         </div>
       </article>
@@ -123,8 +145,10 @@
           <div class="truck-container">
             <i class="fa-solid fa-truck"></i>
           </div>
-          <p class="precio-producto">$70.500</p>
-          <p class="descuento-producto">10% OFF</p>
+          <div class="flex-p">
+            <p class="precio-producto">$70.500</p>
+            <p class="descuento-producto">10% OFF</p>
+          </div>
           <h4>Samsung Galaxy S10</h4>
         </div>
       </article>
@@ -134,8 +158,10 @@
           <div class="truck-container">
             <i class="fa-solid fa-truck"></i>
           </div>
-          <p class="precio-producto">$23.200</p>
-          <p class="descuento-producto">5% OFF</p>
+          <div class="flex-p">
+            <p class="precio-producto">$23.200</p>
+            <p class="descuento-producto">5% OFF</p>
+          </div>
           <h4>SmartTv Samsung 43"</h4>
         </div>
       </article>
