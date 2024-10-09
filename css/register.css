@@ -11,6 +11,10 @@ main {
   font-family: roboto, sans-serif;
   color: #666;
 }
+
+form{
+  margin: 15px;
+}
 form label{
   display: none;
 }

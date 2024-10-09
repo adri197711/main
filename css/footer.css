@@ -13,6 +13,12 @@ footer article{
   font-size: 2em;
   padding: 10px;
 }
+.footer-icon:hover{
+  color: #39b54a;
+ 
+}
+
+
 
 footer span{
   padding: 20px;
